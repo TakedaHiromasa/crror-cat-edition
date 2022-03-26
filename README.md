@@ -1,7 +1,7 @@
 crror
 =====
 
-Colorize error messages from various compilers
+Cat says error messages for various compilers
 
 
 How to install
@@ -16,12 +16,12 @@ How to install
 
 2. clone
    ```
-   $ git clone https://github.com/bearmini/crror.git ~/crror
+   $ git clone https://github.com/TakedaHiromasa/crror-cat-edition.git ~/crror-cat-edition
    ```
 
 3. setup $PATH and $GOPATH
    ```
-   $ export PATH=$PATH:~/crror
+   $ export PATH=$PATH:~/saycat
    $ export GOPATH=~/golang
    ```
 
@@ -33,17 +33,17 @@ How to use
 
 feed output from a compiler/linker commands
 
-    $ crror make
+    $ saycat make
  
     
 or
 
-    $ crror gcc test.c
+    $ saycat gcc test.c
 
 
 feed compiler/linker output from a log file
 
     $ make 2>&1 > build.log
-    $ crror build.log
+    $ saycat build.log
 
 
